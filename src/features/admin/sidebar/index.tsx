@@ -55,7 +55,7 @@ const AdminSidebar = ({ className }: { className: string }) => {
         }}
         disabled={isSmallScreen}
       >
-        CI
+        NX
       </button>
 
       <div

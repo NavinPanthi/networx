@@ -1,6 +1,6 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistReducer, persistStore } from "redux-persist";
-import storageSession from "redux-persist/lib/storage/session";
+import storageSessionModule from "redux-persist/lib/storage/session";
 
 import sidebarReducer from "./slices/sidebar-slice";
 import userReducer from "./slices/user-slice";
@@ -9,6 +9,9 @@ const rootReducer = combineReducers({
   user: userReducer,
   sidebar: sidebarReducer,
 });
+
+const storageSession =
+  (storageSessionModule as any).default ?? storageSessionModule;
 
 const persistConfig = {
   key: "root",

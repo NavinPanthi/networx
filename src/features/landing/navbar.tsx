@@ -60,7 +60,7 @@ const Navbar = () => {
             LeftIcon={Profile02Icon}
             size="sm"
             className="justify-start"
-            onClick={() => navigate("/student-profile")}
+            onClick={() => navigate("/candidate-profile")}
           >
             Profile
           </Button>
@@ -96,7 +96,7 @@ const Navbar = () => {
         if (!isUser) {
           navigate("/log-in");
         }
-        navigate("/student-profile");
+        navigate("/candidate-profile");
       },
     },
     {
@@ -125,7 +125,7 @@ const Navbar = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "spring", delay: 0.1 }}
           className={cn(
-            "hover:text-core-light cursor-pointer uppercase",
+            "hover:text-core-light cursor-pointer capitalize",
             className,
           )}
           onClick={() => {
@@ -172,7 +172,7 @@ const Navbar = () => {
             className="cursor-pointer text-2xl font-semibold"
             onClick={() => navigate("/")}
           >
-            CI
+            NX
           </motion.p>
           <ul className="flex items-center gap-10">{renderTabs()}</ul>
           <span className="cursor-pointer">
@@ -186,7 +186,7 @@ const Navbar = () => {
               className="cursor-pointer text-2xl font-semibold"
               onClick={() => navigate("/")}
             >
-              CI
+              NX
             </p>
             {isNavbarOpened ? (
               <MultiplicationSignIcon

@@ -40,7 +40,7 @@ const getRoutes = (loginStatus: boolean) => {
   if (!loginStatus) {
     return authRoutes;
   }
-
+  console.log(getUserData());
   return checkAdmin(getUserData())
     ? adminRoutes
     : checkCompany(getUserData())

@@ -38,14 +38,14 @@ const JobHeroSection = () => {
   };
 
   return (
-    <section className="relative flex w-full flex-col items-center justify-center bg-white px-4 py-12 text-center lg:mt-16 lg:px-28 lg:py-16">
+    <section className="relative flex w-full flex-col items-center justify-center bg-white px-4 py-12 text-center lg:mt-16 lg:px-28 lg:py-16 ">
       {/* Hero Title */}
-      <div className="max-w-2xl">
+      <div className="max-w-2xl sm:min-h-[400px] flex flex-col items-center justify-center">
         <h2 className="mb-3 text-3xl font-bold text-black md:text-4xl">
           Find Job Opportunities
         </h2>
         <p className="mb-6 text-gray-600">
-          Connecting users to the best job opportunities
+          Connecting talent with trusted cybersecurity careers.
         </p>
 
         <form
@@ -78,7 +78,9 @@ const JobHeroSection = () => {
         <h3 className="mb-6 text-xl font-bold text-black">Featured Jobs</h3>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {jobsData &&
-            jobsData.items.slice(0, 5).map((job) => <JobCard job={job} />)}
+            jobsData.items
+              .slice(0, 5)
+              .map((job) => <JobCard key={job.id} job={job} />)}
         </div>
       </div>
     </section>

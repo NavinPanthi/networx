@@ -11,10 +11,10 @@ const Footer = () => {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 border-b border-gray-700 pb-10 md:grid-cols-2 lg:grid-cols-4">
         {/* Platform Info */}
         <div>
-          <h3 className="mb-3 font-bold text-white">ABOUT CYBER INTERN</h3>
+          <h3 className="mb-3 font-bold text-white">ABOUT Networx</h3>
           <p className="mb-4 text-sm">
             Your gateway to cybersecurity jobs, skill-building, and professional
-            growth. We connect students with leading companies.
+            growth. We connect users with leading companies.
           </p>
           <div className="flex space-x-4 text-lg text-white">
             <Facebook01Icon className="cursor-pointer hover:text-gray-400" />
@@ -60,13 +60,13 @@ const Footer = () => {
       {/* Branding & Copyright */}
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-center space-y-4 pt-6">
         <div className="border border-white px-6 py-1 text-sm tracking-widest text-white">
-          CI
+          NX
         </div>
 
         <p className="text-center text-sm">
-          Copyright © 2025 CYBER INTERN. All Rights Reserved.
+          Copyright © 2025 Networx. All Rights Reserved.
           <br />
-          Connecting students with cybersecurity opportunities worldwide.
+          Connecting users with cybersecurity opportunities worldwide.
         </p>
       </div>
     </footer>

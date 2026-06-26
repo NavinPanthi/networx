@@ -69,7 +69,7 @@ const CompanyJobs = () => {
             "h-[calc(100vh-210px)]": collapsed,
           })}
         >
-          {internsData && <JobTable jobs={jobsData.items} />}
+          {jobsData && <JobTable jobs={jobsData.items} />}
         </div>
       </div>
       <RegisterJobDrawer
